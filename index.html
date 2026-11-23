@@ -1,13 +1,49 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <style>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</style></head>
-  <body>
 <title>Create Connections Ideas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<style>
+/* Layout: one narrow reading column; large quiet headings, each section closes with its question. */
+:root {
+  --bg: #f7f8fa;
+  --fg: #1f2430;
+  --muted: #6b7280;
+  --rule: #dfe3ea;
+  --accent: #3d5a9e;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171e; --fg: #e6e9ef; --muted: #8f97a8; --rule: #282d38; --accent: #93aee8; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171e; --fg: #e6e9ef; --muted: #8f97a8; --rule: #282d38; --accent: #93aee8; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg);
+  font: 1.15rem/1.7 var(--serif);
+  padding-block: 72px 96px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 34rem; margin: 0 auto; }
+h1 { font-weight: 500; font-size: 2.2rem; line-height: 1.15; letter-spacing: -.01em; margin: 0 0 16px; text-wrap: balance; }
+h2 { font-weight: 500; font-size: 1.5rem; line-height: 1.25; margin: 64px 0 16px; text-wrap: balance; }
+h2::before { content: ""; display: block; width: 28px; border-top: 1px solid var(--accent); margin-bottom: 20px; }
+p { margin: 0 0 1.1em; }
+.lede { color: var(--muted); font-size: 1.05rem; margin-bottom: 0; }
+.q { font-style: italic; color: var(--accent); margin-top: 1.6em; }
+.q span { font-family: var(--sans); font-style: normal; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; margin-right: .6em; color: var(--muted); }
+ul { margin: 0 0 1.1em; padding-left: 1.2em; }
+li { margin-bottom: .5em; padding-left: .2em; }
+li::marker { color: var(--accent); }
+</style>
 
+<main>
 <h1>Create Connections: what I keep coming back to</h1>
 
-<p>MoMA x Anthropic sprint.</p>
+<p class="lede">MoMA x Anthropic sprint. Nothing here is decided. These are the directions I keep circling and the question under each one.</p>
 
 <h2>Where I'm starting from</h2>
 
@@ -21,7 +57,7 @@
 
 <p>But I'm not sure it has to be two way. You can feel connected to someone through their writing, or to someone who has passed away, or to a character in a story, and none of them can answer.</p>
 
-<p><i>Question: does a connection need to be reciprocal to be real?</i></p>
+<p class="q"><span>Question</span>does a connection need to be reciprocal to be real?</p>
 
 <h2>2. How long does a connection have to last?</h2>
 
@@ -29,7 +65,7 @@
 
 <p>I'm interested in the temporalness of social connections. Things that are only there for a moment, and what they leave behind. This also ties back to the memorial pond, where two strangers exchange advice and never meet.</p>
 
-<p><i>Question: what makes a connection matter, how long it lasts or what it does to you?</i></p>
+<p class="q"><span>Question</span>what makes a connection matter, how long it lasts or what it does to you?</p>
 
 <h2>3. Can you connect with something that isn't alive?</h2>
 
@@ -37,7 +73,7 @@
 
 <p>So where does the connection actually live? In the thing, or in the person? I'm not trying to argue that AI is the same as a person. I'm more curious about the gap between feeling like something is on the other side and it actually being there.</p>
 
-<p><i>Question: do we connect with things for what they are, or for what we put onto them?</i></p>
+<p class="q"><span>Question</span>do we connect with things for what they are, or for what we put onto them?</p>
 
 <h2>4. Connection as a way to grow</h2>
 
@@ -45,7 +81,7 @@
 
 <p>The flip side is that it gets harder to grow out of what we know. As a kid I had breadth. As an adult it's depth, and the more I invest in what I know, the smaller my world gets. Connecting is one way out of that.</p>
 
-<p><i>Question: how do we stay open to worlds beyond our own as ours gets smaller?</i></p>
+<p class="q"><span>Question</span>how do we stay open to worlds beyond our own as ours gets smaller?</p>
 
 <h2>5. People, place, and the village</h2>
 
@@ -61,7 +97,7 @@
 
 <p>I don't think it has to look like a literal village. It could be abstract. The point is the feeling of belonging to something because of the people in it.</p>
 
-<p><i>Question: can strangers share a place without sharing the same experiences?</i></p>
+<p class="q"><span>Question</span>can strangers share a place without sharing the same experiences?</p>
 
 <h2>How this fits with what I've already made</h2>
 
@@ -72,7 +108,9 @@
 <li>The 4D color space work is about what exists that we can't normally see.</li>
 </ul>
 
-<h2>Food for though</h2>
+<p>The common move is that I take something personal and make a way for someone else to step into it.</p>
+
+<h2>Food for thought</h2>
 
 <ul>
 <li>Don't smooth out the contradictions yet. We want connection but stay passive. We live close and feel far. We attach to things that can't answer back.</li>
@@ -88,5 +126,4 @@
 <li>What do I want someone to feel when they use it?</li>
 <li>What can a digital space do that a room at MoMA can't?</li>
 </ul>
-
-</body></html>
+</main>
