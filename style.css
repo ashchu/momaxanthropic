@@ -57,12 +57,16 @@ html {
 
 body{
 	/* Use cover to cover the entire screen*/
-	margin: 0;
 	/* font-family: 'Varela Round', sans-serif; */
 	/* font-family: "Leitura News", Palatino, Georgia, "Times New Roman", serif; */
 	/* font-family: 'Source Serif Pro', serif; */
 	/* font-family: serif; */
 	font-family: system-ui, -apple-system, sans-serif;
+	padding-top: 5vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+    /* width: fit-content; */
+    padding-left: 10vw;
 }
 
 #now{
