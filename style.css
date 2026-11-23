@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+
+#loading{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6dcdc;
+  position: fixed;
+  display: flex;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  color: white;
+  opacity: 1;
+  transition: 2s;
+  visibility: visible;
+}
+
+#loading.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#loading.hidden img{
+  opacity: 0;
+  visibility: hidden;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(359deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+}
+
+#loading img{
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-animation: rotation 2s infinite linear;
+  visibility: visible;
+}
+
+#website{
+	visibility: hidden
+}
+html {
+	scroll-behavior: smooth;
+	max-height:100%;
+}
+
+body{
+	/* Use cover to cover the entire screen*/
+	margin: 0;
+	/* font-family: 'Varela Round', sans-serif; */
+	/* font-family: "Leitura News", Palatino, Georgia, "Times New Roman", serif; */
+	/* font-family: 'Source Serif Pro', serif; */
+	/* font-family: serif; */
+	font-family: system-ui, -apple-system, sans-serif;
+}
+
+#now{
+	padding: 14px;
+	background: #fff;
+	font-family: system-ui, -apple-system, sans-serif;
+	color: var(--ink);
+}
+
+/* @media only screen and (max-width: 900px) {
+	body {
+	background-color:black;
+	}
+} */
+
+#home {
+	margin: 0;
+	background-position: center;
+	background-size: cover;
+	background-color: #ffecda;
+	/* background-image: url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"); */
+	height: 100vh;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 2.vw;
+	display:inline-flex;
+	margin-left:3vw;
+}
+
+.min-button {
+	height: 27px;
+	width: 70px;
+	display: inline-block;
+	background-color: white;
+	border: 2px solid black;
+	position: relative;
+	border-radius: 2px;
+}
+
+.min-button span {
+	color: black;
+	text-align:center;
+	padding-top: 4px;
+	display: block;
+}
+
+.min-button:hover {
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+
+.min-button:hover span{
+	color:white;
+	text-shadow: 2px 0px 2px black;
+}
+
+.row{
+	display: flex;
+	padding: 0 4px;
+	margin-bottom: 20px;
+}
+
+.column{
+	flex: 23%;
+	max-width: 25%;
+	padding: 0 0.5%;
+}
+
+.column img{
+	width: 100%;
+	margin-top: 2.5%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#directory a{
+	font-size: 30px;
+	top: 4.5%;
+	position: absolute;
+	left: 80%;
+	/* text-shadow: 3px 3px 2px #000000; */
+}
+
+#footer {
+	height: fit-content;
+	padding:10px;
+	background-color: #8892b2;;
+	color: white;
+}
+
+#profile {
+  overflow: hidden;
+}
+
+#footer a {
+	color: white;
+}
+
+#links {
+	font-size:40px;
+	text-shadow: 3px 3px 3px;
+	position: absolute;
+	top: 24vh;
+	left: 41vw;
+	/* padding:10px; */
+	margin: 10px;
+	width: fit-content;
+	background-color: lightblue;
+	border: 2px solid;
+	border-color:black;
+	border-radius: 2.1px;
+  box-shadow: 5px 5px #101114;
+}
+
+
+#links a{
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#links a:hover {
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+
+#diamond {
+    position: absolute;
+    top: 15vh;
+    left: 75vw;
+    transform: rotate(-45deg);
+    height: 200px;
+    width: 200px;
+    background-color: #8b4f80;
+}
+
+#name {
+	margin-left:3vw;
+	margin-bottom: 0;
+	position: relative;
+}
+
+#profile img {
+ border: 2px solid black;
+ margin: auto;
+ height: 300px;
+ border-radius: 2px;
+ overflow: hidden;
+ position: absolute;
+ left: 70vw;
+ top: 20vh;
+}
+
+#profile:hover {
+ content: url("img/shestem.jpg");
+ height: 300px;
+ overflow: hidden;
+ position: absolute;
+ left: 70vw;
+ top: 20vh;
+ border: 2px solid black;
+ border-radius: 2px;
+}
+
+#profile-box{
+	left: 71vw;
+	top: 21.7vh;
+	position:absolute;
+	height: 300px;
+	border-radius: 2px;
+  width: 230px;
+	background-color: #c8e7ed;
+}
+
+#profile2 img {
+ border: 2px solid black;
+ margin: auto;
+ height: 250px;
+ border-radius: 2px;
+ overflow: hidden;
+ position: absolute;
+ left: 80vw;
+ top: 50vh;
+}
+
+#profile2:hover {
+ content: url("img/b/sunset.jpg");
+ height: 250px;
+ overflow: hidden;
+ position: absolute;
+ left: 80vw;
+ top: 50vh;
+ border: 2px solid black;
+ border-radius: 2px;
+}
+
+#profile2-box{
+	left: 79vw;
+	top: 61vh;
+	position:absolute;
+	height: 180px;
+	border-radius: 2px;
+  width: 180px;
+	background-color: #bfcfff;
+}
+
+@media screen and (max-width: 600px) {
+  #profile2{
+    visibility: hidden;
+  }
+  #profile2:hover{
+    visibility: hidden;
+  }
+  #profile2-box{
+    visibility: hidden;
+  }
+  #profile-box{
+    visibility: hidden;
+  }
+  #profile{
+    visibility: hidden;
+  }
+  #profile:hover{
+    visibility: hidden;
+  }
+}
+
+.highlight {
+	opacity: 0.5;
+	content: '';
+  background-color: #f5c0a2;
+  height: 1.5vh;
+  position: relative;
+  display: block;
+  top: 60px;
+  transform: translateY(-50%);
+  left: 10%;
+  width: 84%;
+}
+
+.typewrite {
+	text-align: center;
+	color: black;
+}
+
+.socials{
+	/* width: 13vw; */
+	height: fit-content;
+	position: fixed;
+	border: 2px solid black;
+	border-radius: 2px;
+	left: 5vw;
+	top: 90vh;
+  box-shadow: 5px 5px #101114;
+}
+
+/* @media screen and (max-width:360px){
+    #profile-desc span {
+        font-size:13px !important;
+    }
+} */
+
+.socials a {
+	color: black;
+}
+
+
+#icon-spacing{
+	margin:10px;
+}
+
+#profile-desc {
+	font-size: 1rem;
+	padding-top: 8%;
+	margin: 10%;
+	/* line-height: 1.2em; */
+	max-width: fit-content;
+}
+
+#profile-desc span {
+	position: relative;
+	margin-bottom:20px;
+	display: block;
+	max-width: 100%;
+}
+
+.light {
+	background: rgba(244, 240, 134, 0.47);
+  transition: all linear .2s;
+  border-radius: 2px;
+}
+
+.light:hover{
+	background: rgb(255, 251, 132);
+	transition: all linear .2s;
+	border-radius: 2px;
+}
+
+#profile-desc a{
+  color: black;
+}
+
+.avg-button {
+	width: 80px;
+	height: 44px;
+	font-size: 1rem;
+	border: 2px solid black;
+	border-radius: 2px;
+	position: absolute;
+  box-shadow: -5px -5px #101114;
+}
+
+#advice {
+	background-color: #d45079;
+  left: 10vw;
+  top: 42vh;
+  color: white;
+  text-align: center;
+}
+
+#advice:hover {
+	cursor: pointer;
+	background-color: #f4dada;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#advice-reveal {
+	display: none;
+	background-color: #ffb6b9;
+	border: 2px solid black;
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+	left: 4%;
+	top: 52%;
+	font-size: 0.9em;
+	position: absolute;
+	-webkit-animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear;
+}
+
+#advice-reveal span {
+	padding-left: 8%;
+	padding-right: 5%;
+	position: absolute;
+}
+
+#funfact {
+	background-color: #60a9a6;
+	left: 55.4vw;
+	color: white;
+	top: 8.9vh;
+	font-size: 0.9rem;
+}
+
+#funfact:hover {
+	background-color: #d3f6f3;
+	cursor: url("img/wand.png"), auto;
+}
+
+#funfact-reveal {
+	left: 43vw;
+	top: 13vh;
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 2px;
+	display: none;
+	width: 200px;
+	background-color: #badfdb;
+	height: 40px;
+	-webkit-animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear;
+}
+
+#funfact-reveal span {
+	position: absolute;
+	text-align: center;
+	font-size: 0.8rem;
+	padding-top: 4%;
+	margin-left: 5%;
+}
+
+#projectid:hover{
+  cursor: pointer;
+  opacity: 0.5;
+	transition-duration: 0.5s;
+}
+
+a{
+color: black;
+}
+
+a:hover {
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+
+.bclass{
+  /* font-weight: 800; */
+  text-align: center;
+  text-decoration: underline;
+  /* background-color: #F5C6C6; */
+  width: auto;
+}
+
+/* ==========================================================================
+   STYLES
+   ========================================================================== */
+
+/* ---- Design tokens ------------------------------------------------------- */
+:root {
+  --ink: #101114;            /* outlines and text */
+  --paper: #fffdf7;          /* card background */
+  --header: #f3ece0;         /* top bar of the card */
+  --hero-bg: #fdeee4;        /* hero background */
+  --highlight: rgba(245, 215, 110, .55);
+  --highlight-hover: rgba(245, 215, 110, 1);
+  --spin-slow: 2.4s;         /* seconds per cycle while idle (bigger = slower) */
+  --spin-fast: .6s;          /* seconds per cycle while the clay is changing */
+  --mono: ui-monospace, Menlo, monospace;
+}
+
+/* ---- Card frame ---------------------------------------------------------- */
+.frame {
+  max-width: 720px;
+  margin: 0 auto;
+  /* border: 2px solid var(--ink); */
+  /* border-radius: 4px; */
+  /* background: var(--paper); */
+  overflow: hidden;
+}
+.frame-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-bottom: 2px solid var(--ink);
+  background: var(--header);
+  font: 11px var(--mono);
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 18px 22px;
+  /* background: var(--hero-bg); */
+}
+
+/* ---- Left column: text --------------------------------------------------- */
+.hero-text { flex: 1; min-width: 250px; }
+.hero-title { font-size: 24px; font-weight: 500; }
+.hero-desc  { min-height: 30px; margin: 4px 0 12px; font-size: 15px; line-height: 1.5; }
+.divider    { margin: 10px 0 6px; border-top: 2px dashed var(--ink); }
+.now        { font-size: 15px; line-height: 2.05; }
+.now-label  { font: 12px var(--mono); }
+
+/* ---- Shape buttons (spans, not <button>, so no browser styling interferes) */
+.shape-btn {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 6px 11px;
+  border: 2px solid var(--ink);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+}
+.shape-btn.is-active { background: var(--ink); color: #fff; }
+
+/* ---- Hover phrases ------------------------------------------------------- */
+.phrase {
+  padding: 0 2px;
+  border-bottom: 2px solid var(--ink);
+  background: var(--highlight);
+  cursor: pointer;
+  transition: background .2s;
+}
+.phrase:hover { background: var(--highlight-hover); }
+
+/* ---- Right column: wheel ------------------------------------------------- */
+.hero-art     { width: 240px; text-align: center; }
+.art-caption  { margin-top: -2px; font-size: 13px; }
+.art-hint     { margin-top: 2px;  font-size: 11px; }
+
+#wheel {
+  touch-action: none;        /* lets touch-drag reshape instead of scrolling */
+  user-select: none;
+  cursor: grab;
+}
+
+/* Clay color changes smoothly between shapes */
+#clay-fill { transition: fill .45s; }
+#rim       { transition: opacity .3s; }
+
+/* Little extras (soccer patches, dumpling pleats...) fade in per shape */
+.detail          { opacity: 0; transition: opacity .35s; } 
+.detail.is-shown { opacity: 1; }
+
+/* Spin: stripes slide across the clay, dashes circle the wheel head */
+@keyframes stripe-slide { to { transform: translateX(-24px); } }
+@keyframes ring-spin    { to { stroke-dashoffset: -60; } }
+.stripes-spin { animation: stripe-slide var(--spin-slow) linear infinite; }
+.ring-spin    { animation: ring-spin    var(--spin-slow) linear infinite; }
+#wheel.is-forming .stripes-spin,
+#wheel.is-forming .ring-spin { animation-duration: var(--spin-fast); }
